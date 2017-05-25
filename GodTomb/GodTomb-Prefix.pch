@@ -1,0 +1,86 @@
+//
+//  GodTomb-Prefix.pch
+//  GodTomb
+//
+//  Created by xiangxiong on 2017/3/28.
+//  Copyright © 2017年 xiangxiong. All rights reserved.
+//
+
+#ifndef GodTomb_Prefix_pch
+#define GodTomb_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GodTomb_Prefix_pch */
+
+
+#ifdef __OBJC__
+
+#import "CDGeneralMethod.h"
+#import "CDUIAppearance.h"
+#import "UIColor+CDUtility.h"
+#import "UIImage+CDUtility.h"
+#import "NSDictionary+BDUtility.h"
+#import "BDAllocNewLabel.h"
+#import "CDBaseViewController.h"
+#import "CDNavigationViewController.h"
+#import "CDWebViewController.h"
+#import "CDAuthorBreifModel.h"
+#import "SVProgressHUD.h"
+#import "BookUtils.h"
+#import "PaperController.h"
+#import "CDUserDefaults.h"
+
+#pragma mark BDObject
+#pragma mark BDMethod
+#import "NSObject+BDBDGatherSubView.h"
+#import "BDCopyView.h"
+#pragma mark BDNSArray
+#import "NSArray+BDNSArray.h"
+#pragma BDNSDate
+#import "NSDate+BDDate.h"
+#pragma BDNSDictionary
+#import "NSDictionary+BDNSDictionary.h"
+#pragma BDBase64
+#import "NSData+BDBase64.h"
+#import "NSString+BDBase64.h"
+#pragma BDEncrypt
+#import "NSObject+BDDes.h"
+#import "NSObject+BDEncrypt.h"
+#pragma mark BDHtmlString
+#import "NSString+BDHTML.h"
+#pragma mark BDNSString
+#import "NSString+BDNSString.h"
+#pragma mark BDUIImage
+#import "UIImage+BDImage.h"
+
+
+#pragma mark BDUI
+#import "UIButton+BDButton.h"
+#import "UIColor+BDExpanded.h"
+#import "UIView+BDConvenience.h"
+#import "UITabBar+BDBadge.h"
+#import "UIView+BDToast.h"
+#import "UIView+BDLayer.h"
+#import "UIView+BDView.h"
+
+#pragma mark - novel
+
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"\n%s#%s->line:%d\n" fmt"\n\n"), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+#define kUIColorFromRGB(rgbValue, a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+
+//umeng
+#import "UMMobClick/MobClick.h"
+#import "CDMobclickEvent.h"
+#endif
+
+
