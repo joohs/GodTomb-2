@@ -46,7 +46,7 @@ NSString *const kCDHomeTableViewCell = @"CDHomeTableViewCell";
     [self initData];
     if (!self.noBar) {
         [self createLeftBar];
-        [self createRightBar];
+//        [self createRightBar];
     }
     [self createTableView];
     [self supportSpotLightSearch];
@@ -58,7 +58,7 @@ NSString *const kCDHomeTableViewCell = @"CDHomeTableViewCell";
     if (!self.hideWarning) {
         [mArray addObject:@{}];
     }
-    self.dataArray = (NSArray *)mArray;
+    self.dataArray = (NSArray *)[CDHomeViewModel bookData];
 }
 
 - (void)createLeftBar
@@ -101,13 +101,13 @@ NSString *const kCDHomeTableViewCell = @"CDHomeTableViewCell";
 
 - (void)toWebPage:(NSString *)urlString
 {
-    CDWebViewController *web = [[CDWebViewController alloc]initWithUrl:urlString];
+    CDWebViewController *web = [[CDWebViewController alloc] initWithUrl:urlString];
     [self.navigationController pushViewController:web animated:YES];
 }
 
 - (void)createTableView
 {
-    self.listTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CDScreenWidth, CDScreenHeight) style:UITableViewStyleGrouped];
+    self.listTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, CDScreenWidth, CDScreenHeight) style:UITableViewStylePlain];
     self.listTableView.delegate = self;
     self.listTableView.dataSource = self;
     [self.view addSubview:self.listTableView];
@@ -176,7 +176,7 @@ NSString *const kCDHomeTableViewCell = @"CDHomeTableViewCell";
 - (CDHomeDetailViewController *)toDetailController:(CDHomeViewModel *)model
 {
     [CDMobclickEvent mobClickEventWithHomeDetail:model.titleName];
-    CDHomeDetailViewController *detail = [[CDHomeDetailViewController alloc]initWithModel:model];
+    CDHomeDetailViewController *detail = [[CDHomeDetailViewController alloc] initWithModel:model];
     return detail;
 }
 

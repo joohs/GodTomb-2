@@ -54,7 +54,7 @@
     [self.mArray addObject:@"基本信息"];
     [self.mArray addObject:@"作品"];
     [self.mArray addObject:@"新浪微博"];
-    [self.mArray addObject:@"腾讯微博"];
+//    [self.mArray addObject:@"腾讯微博"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

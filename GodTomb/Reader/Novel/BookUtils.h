@@ -73,7 +73,7 @@ typedef enum{
 @end
 
 @interface Page : NSObject
-@property NSString* string;
+@property (nonatomic, copy) NSString* string;
 @property NSRange range;
 @property BOOL startWithNewLine;
 -(id) initWithString:(NSString*) string encoding:(NSStringEncoding)encoding;
@@ -83,19 +83,19 @@ typedef enum{
 @interface BookMark : NSObject<NSCoding>
 @property NSUInteger time;
 @property NSUInteger position;
-@property NSString* name;
+@property (nonatomic, copy) NSString* name;
 @end
 
 @interface Book : NSObject
-@property NSString* path;
-@property NSString* name;
-@property NSString* fullPath;
+@property (nonatomic, copy) NSString* path;
+@property (nonatomic, copy) NSString* name;
+@property (nonatomic, copy) NSString* fullPath;
 @property NSUInteger lastOpenTime;
-@property BookMark* mark;
+@property (nonatomic, strong) BookMark* mark;
 @property long long size;
 @property BFileType type;
 @property BEncoding encoding;
-@property NSMutableArray* catalog;
+@property (nonatomic, strong) NSMutableArray* catalog;
 +(Book*) forName:(NSString*)name;
 +(Book*) forName:(NSString*)name forType:(BFileType) type;
 +(Book*) forName:(NSString*)name inPath:(NSString*) path;

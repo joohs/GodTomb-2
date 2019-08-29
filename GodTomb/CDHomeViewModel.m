@@ -36,8 +36,7 @@
 
 + (NSString *)introduce:(NSString *)string
 {
-    return [NSString stringWithFormat:@"http://xinxinsun.cn/godtomb_app/%@.html",string];
-    
+    return [NSString stringWithFormat:@"https://baike.baidu.com/item/%@",string];
 }
 
 + (NSMutableArray *)bookData
@@ -46,14 +45,14 @@
     NSMutableArray *mArr = [NSMutableArray array];
     [mArr addObject:@{@"imageName":@"6",
                       @"titleName":@"圣墟",
-                      @"chapterCount":@"已有305",
+                      @"chapterCount":@"已有1420",
                       @"completeTime":@"2016-11-01上传起点",
                       @"breif":@"在破败中崛起，在寂灭中复苏。\n沧海成尘，雷电枯竭，那一缕幽雾又一次临近大地，世间的枷锁被打开了，一个全新的世界就此揭开神秘的一角……",
                       @"status":@"连载",
                       @"content":@"",
                       @"numberOfWords":@"",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"sx"],
+                      @"introduceUrl":[self introduce:@"圣墟"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/圣墟/20177753/0/ac6eddc451da81cb3b9f78a45b66d01609243159?fr=lemma&ct=single#aid=0&pic=ac6eddc451da81cb3b9f78a45b66d01609243159"}];
     
     [mArr addObject:@{@"imageName":@"5",
@@ -65,7 +64,7 @@
                       @"content":@"",
                       @"numberOfWords":@"658.72万",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"wmsj"],
+                      @"introduceUrl":[self introduce:@"完美世界/9446056"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/完美世界/9446056/0/4034970a304e251f96757afdae86c9177f3e5330?fr=lemma&ct=single#aid=0&pic=4034970a304e251f96757afdae86c9177f3e5330"}];
     
     [mArr addObject:@{@"imageName":@"4",
@@ -76,7 +75,7 @@
                       @"status":@"完结",
                       @"numberOfWords":@"6359089",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"zt"],
+                      @"introduceUrl":[self introduce:@"遮天"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/遮天/7572/0/0824ab18972bd407b427bbb178899e510eb3099d?fr=lemma&ct=single#aid=0&pic=0824ab18972bd407b427bbb178899e510eb3099d"}];
     
     [mArr addObject:@{@"imageName":@"3",
@@ -88,7 +87,7 @@
                       @"content":@"",
                       @"numberOfWords":@"2957727",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"csj"],
+                      @"introduceUrl":[self introduce:@"长生界/6551163"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/长生界/6551163/0/f703738da97739123c10c66bfb198618367ae282?fr=lemma&ct=single#aid=0&pic=f703738da97739123c10c66bfb198618367ae282"}];
     
     [mArr addObject:@{@"imageName":@"2",
@@ -100,7 +99,7 @@
                       @"content":@"",
                       @"numberOfWords":@"3002416",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"sm"],
+                      @"introduceUrl":[self introduce:@"神墓"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/神墓/9947627/0/dc54564e9258d1099ea9eec5d758ccbf6c814d7a?fr=lemma&ct=single#aid=0&pic=dc54564e9258d1099ea9eec5d758ccbf6c814d7a"}];
     
     [mArr addObject:@{@"imageName":@"1",
@@ -112,7 +111,7 @@
                       @"content":@"",
                       @"numberOfWords":@"782206",
                       @"originalUrl":@"",
-                      @"introduceUrl":[self introduce:@"bsbm"],
+                      @"introduceUrl":[self introduce:@"不死不灭"],
                       @"pictureUrl":@"https://baike.baidu.com/pic/不死不灭/5388297/0/8718367adab44aedd2a39985b21c8701a08bfbe6?fr=lemma&ct=single#aid=0&pic=8718367adab44aedd2a39985b21c8701a08bfbe6"}];
     
     for (NSDictionary *dic in mArr) {
@@ -124,7 +123,7 @@
 + (void)bookDataController:(UIViewController *)controller book:(Book *)book
 {
     PaperController *_paperController = [[PaperController alloc] init];
-    [_paperController.view setFrame:[[UIScreen mainScreen] bounds]];
+    [_paperController.view setFrame:CGRectMake(0, 0, CDScreenWidth, CDScreenHeight_All)];
     [_paperController bindBook:book];
     [controller presentViewController:_paperController animated:YES completion:^{
     }];

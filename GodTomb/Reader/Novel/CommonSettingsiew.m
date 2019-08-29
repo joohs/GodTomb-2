@@ -22,28 +22,29 @@
     self = [super initWithFrame:frame];
     if (self) {
         CGFloat width = [UIScreen mainScreen].bounds.size.width/4;
-        CGFloat height = frame.size.height;
+        CGFloat height = 42;
+        CGFloat orginY = 3;
         self.frame = frame;
         self.backgroundColor = [UIColor blackColor];
-        self.lightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+        self.lightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, orginY, width, height)];
         [self.lightBtn setImage:[UIImage imageNamed:@"brigness"] forState:UIControlStateNormal];
         [self.lightBtn setTitle:@"屏幕亮度" forState:UIControlStateNormal];
         self.lightBtn.titleLabel.font = [UIFont systemFontOfSize:8.5];
         [self returnTopImageBottomTitleButton:self.lightBtn gap:6];
         
-        self.fontSizeBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.lightBtn.frame), 0, width, height)];
+        self.fontSizeBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.lightBtn.frame), orginY, width, height)];
         [self.fontSizeBtn setImage:[UIImage imageNamed:@"fontsize"] forState:UIControlStateNormal];
         [self.fontSizeBtn setTitle:@"字体大小" forState:UIControlStateNormal];
         self.fontSizeBtn.titleLabel.font = [UIFont systemFontOfSize:8.5];
         [self returnTopImageBottomTitleButton:self.fontSizeBtn gap:6];
         
-        self.colorBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.fontSizeBtn.frame), 0, width, height)];
+        self.colorBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.fontSizeBtn.frame), orginY, width, height)];
         [self.colorBtn setImage:[UIImage imageNamed:@"fontcolor"] forState:UIControlStateNormal];
         [self.colorBtn setTitle:@"自定义颜色" forState:UIControlStateNormal];
         self.colorBtn.titleLabel.font = [UIFont systemFontOfSize:8.5];
         [self returnTopImageBottomTitleButton:self.colorBtn gap:6];
         
-        self.customBgBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.colorBtn.frame), 0, width, height)];
+        self.customBgBtn = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.colorBtn.frame), orginY, width, height)];
         [self.customBgBtn setImage:[UIImage imageNamed:@"background"] forState:UIControlStateNormal];
         [self.customBgBtn setTitle:@"自定义背景" forState:UIControlStateNormal];
         self.customBgBtn.titleLabel.font = [UIFont systemFontOfSize:8.5];

@@ -38,7 +38,6 @@
 		614408191E8CD67C00ACDE5B /* CDAuthorInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 614408181E8CD67C00ACDE5B /* CDAuthorInformationTableViewCell.m */; };
 		614408C71E8D059B00ACDE5B /* 不死不灭.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C11E8D059B00ACDE5B /* 不死不灭.txt */; };
 		614408C81E8D059B00ACDE5B /* 神墓.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C21E8D059B00ACDE5B /* 神墓.txt */; };
-		614408C91E8D059B00ACDE5B /* 圣墟.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C31E8D059B00ACDE5B /* 圣墟.txt */; };
 		614408CA1E8D059B00ACDE5B /* 完美世界.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C41E8D059B00ACDE5B /* 完美世界.txt */; };
 		614408CB1E8D059B00ACDE5B /* 长生界.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C51E8D059B00ACDE5B /* 长生界.txt */; };
 		614408CC1E8D059B00ACDE5B /* 遮天.txt in Resources */ = {isa = PBXBuildFile; fileRef = 614408C61E8D059B00ACDE5B /* 遮天.txt */; };
@@ -79,6 +78,7 @@
 		61A393501EAF669100D53EBE /* CDContactMeTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A3934F1EAF669100D53EBE /* CDContactMeTopTableViewCell.m */; };
 		61B56BE91E8BE20E00C7FC3F /* CDAuthorBreifTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B56BE81E8BE20E00C7FC3F /* CDAuthorBreifTopTableViewCell.m */; };
 		61B56BED1E8BE3E300C7FC3F /* CDAuthorBreifModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B56BEC1E8BE3E300C7FC3F /* CDAuthorBreifModel.m */; };
+		FC57BCC4231654CF00F72F77 /* 圣墟.txt in Resources */ = {isa = PBXBuildFile; fileRef = FC57BCC3231654CF00F72F77 /* 圣墟.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,7 +179,6 @@
 		614408181E8CD67C00ACDE5B /* CDAuthorInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAuthorInformationTableViewCell.m; sourceTree = "<group>"; };
 		614408C11E8D059B00ACDE5B /* 不死不灭.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "不死不灭.txt"; sourceTree = "<group>"; };
 		614408C21E8D059B00ACDE5B /* 神墓.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "神墓.txt"; sourceTree = "<group>"; };
-		614408C31E8D059B00ACDE5B /* 圣墟.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "圣墟.txt"; sourceTree = "<group>"; };
 		614408C41E8D059B00ACDE5B /* 完美世界.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "完美世界.txt"; sourceTree = "<group>"; };
 		614408C51E8D059B00ACDE5B /* 长生界.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "长生界.txt"; sourceTree = "<group>"; };
 		614408C61E8D059B00ACDE5B /* 遮天.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "遮天.txt"; sourceTree = "<group>"; };
@@ -275,6 +274,8 @@
 		61B56BEC1E8BE3E300C7FC3F /* CDAuthorBreifModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAuthorBreifModel.m; sourceTree = "<group>"; };
 		B86FCC94151D0DBEE9B1FEFA /* libPods-GodTomb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GodTomb.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65AFB9B8F4A04C3397EF593 /* Pods-GodTomb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GodTomb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GodTomb/Pods-GodTomb.debug.xcconfig"; sourceTree = "<group>"; };
+		FC15F264231670620042E776 /* GodTombTodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GodTombTodayWidget.entitlements; sourceTree = "<group>"; };
+		FC57BCC3231654CF00F72F77 /* 圣墟.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "圣墟.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,9 +382,9 @@
 		614408C01E8D053100ACDE5B /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				FC57BCC3231654CF00F72F77 /* 圣墟.txt */,
 				614408C11E8D059B00ACDE5B /* 不死不灭.txt */,
 				614408C21E8D059B00ACDE5B /* 神墓.txt */,
-				614408C31E8D059B00ACDE5B /* 圣墟.txt */,
 				614408C41E8D059B00ACDE5B /* 完美世界.txt */,
 				614408C51E8D059B00ACDE5B /* 长生界.txt */,
 				614408C61E8D059B00ACDE5B /* 遮天.txt */,
@@ -407,6 +408,7 @@
 		614CBF091E8BACB600B9DE56 /* GodTombTodayWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FC15F264231670620042E776 /* GodTombTodayWidget.entitlements */,
 				614CBF0A1E8BACB600B9DE56 /* TodayViewController.h */,
 				614CBF0B1E8BACB600B9DE56 /* TodayViewController.m */,
 				614CBF0D1E8BACB600B9DE56 /* MainInterface.storyboard */,
@@ -681,7 +683,6 @@
 				618422E41E8A176B00F877E9 /* Frameworks */,
 				618422E51E8A176B00F877E9 /* Resources */,
 				614CBF131E8BACB600B9DE56 /* Embed App Extensions */,
-				807AD87EB51FD8178FED528C /* [CP] Embed Pods Frameworks */,
 				934F9BF16BE3211278F247B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -736,24 +737,31 @@
 		618422DF1E8A176B00F877E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = xiangxiong;
 				TargetAttributes = {
 					614CBF041E8BACB600B9DE56 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 435YL4NF9J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					618422E61E8A176B00F877E9 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 435YL4NF9J;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -807,9 +815,9 @@
 			files = (
 				614408C71E8D059B00ACDE5B /* 不死不灭.txt in Resources */,
 				618422FA1E8A176B00F877E9 /* LaunchScreen.storyboard in Resources */,
+				FC57BCC4231654CF00F72F77 /* 圣墟.txt in Resources */,
 				614408CA1E8D059B00ACDE5B /* 完美世界.txt in Resources */,
 				614408CB1E8D059B00ACDE5B /* 长生界.txt in Resources */,
-				614408C91E8D059B00ACDE5B /* 圣墟.txt in Resources */,
 				614408CC1E8D059B00ACDE5B /* 遮天.txt in Resources */,
 				614408C81E8D059B00ACDE5B /* 神墓.txt in Resources */,
 				618422F71E8A176B00F877E9 /* Assets.xcassets in Resources */,
@@ -834,30 +842,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		807AD87EB51FD8178FED528C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GodTomb/Pods-GodTomb-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		934F9BF16BE3211278F247B0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GodTomb/Pods-GodTomb-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -870,13 +866,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GodTomb-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1016,8 +1015,11 @@
 		614CBF151E8BACB600B9DE56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GodTombTodayWidget/GodTombTodayWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 435YL4NF9J;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GodTombTodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1031,14 +1033,17 @@
 		614CBF161E8BACB600B9DE56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = GodTombTodayWidget/GodTombTodayWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 435YL4NF9J;
 				INFOPLIST_FILE = GodTombTodayWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuxiangxiong.godtomb.GodTombTodayWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "godtomb-release-todaywidge";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1052,15 +1057,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1083,7 +1096,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1099,15 +1112,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1124,7 +1145,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1138,6 +1159,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GodTomb/GodTomb.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 435YL4NF9J;
 				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
@@ -1154,7 +1176,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuxiangxiong.godtomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "godtomb-debug";
 			};
 			name = Debug;
 		};
@@ -1164,7 +1186,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GodTomb/GodTomb.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 435YL4NF9J;
 				ENABLE_BITCODE = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
@@ -1181,7 +1205,7 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wuxiangxiong.godtomb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "godtomb-release";
 			};
 			name = Release;
 		};

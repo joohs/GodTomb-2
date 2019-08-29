@@ -107,7 +107,7 @@ typedef enum {
 
     [self.view addSubview:pageView];
 
-    titleBar                        = [[TitleBar alloc] initWithFrame:CGRectMake(0, yOffset, self.view.frame.size.width, 48)];
+    titleBar = [[TitleBar alloc] initWithFrame:CGRectMake(0, yOffset, self.view.frame.size.width, CDNavigationBarHeight)];
 //    titleBar.layer.shadowOpacity    = 1;
 //    titleBar.layer.shadowOffset     = CGSizeMake(0, 2);
 //    titleBar.layer.shadowRadius     = 2;
@@ -125,7 +125,7 @@ typedef enum {
     [self.view addSubview:titleBar];
     [titleBar hiddingWithAnim:YES];
 
-    toolBarView = [[ToolBarView alloc] initWithFrame:CGRectMake(0, paperFrame.size.height - 48 + yOffset, self.view.frame.size.width, 48)];
+    toolBarView = [[ToolBarView alloc] initWithFrame:CGRectMake(0, paperFrame.size.height - 48 + yOffset - (CDHasBang ? 34 : 0), self.view.frame.size.width, 48 + (CDHasBang ? 34 : 0))];
     [toolBarView setBackgroundColor:kUIColorFromRGB(0x000000, 0.90)];
     [toolBarView setTarget:self
                    catalog:@selector(openCatalog)
@@ -150,7 +150,7 @@ typedef enum {
     progSatusView.hidden = YES;
     [progSatusView setBackgroundColor:[UIColor blackColor]];
 
-    settingsView    = [[CommonSettingsiew alloc] initWithFrame:CGRectMake(0, paperFrame.size.height + yOffset, self.view.frame.size.width, 48)];
+    settingsView    = [[CommonSettingsiew alloc] initWithFrame:CGRectMake(0, paperFrame.size.height + yOffset - 48 - (CDHasBang ? 34 : 0), self.view.frame.size.width, 48 + (CDHasBang ? 34 : 0))];
     settingsView.hidden = YES;
     [settingsView setBackgroundColor:[UIColor blackColor]];
     [settingsView setTarget:self customBgImage:@selector(customBgimage) changLight:@selector(changeLight) changeFontSize:@selector(changeFontSize) changeColor:@selector(changeColor)];
@@ -183,11 +183,10 @@ typedef enum {
 -(void) loadBookContent:(Page *)page{
     [ViewHelper showProgress:self.view];
     isLoadingComplete = NO;
+    CGRect rect = CGRectMake(0, CDStatusBarHeight + 10, CDScreenWidth, CDScreenHeight_Valid - CDStatusBarHeight);
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [book readBookMark];
         loader = [[BookLoader alloc] initWithBook:book bookMark:book.mark];
-        CGRect rect = pageView.bounds;
-        rect.size.height -= 40;
         [loader buildCache:rect];
         dispatch_async(dispatch_get_main_queue(), ^{
             if ([page isKindOfClass:[Page class]]) {

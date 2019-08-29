@@ -26,7 +26,7 @@
         // Initialization code
         int height = frame.size.height;
         int buttomWidth = 1.5 * height;
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(buttomWidth, 0, frame.size.width - 2*buttomWidth, frame.size.height)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(buttomWidth, CDStatusBarHeight, frame.size.width - 2*buttomWidth, 44)];
         [_titleLabel setTextAlignment:NSTextAlignmentCenter];
         [_titleLabel setFont:[UIFont systemFontOfSize:18]];
         [_titleLabel setTextColor:[UIColor whiteColor]];
@@ -55,7 +55,7 @@
         [_leftButton removeFromSuperview];
 
         [leftButton removeFromSuperview];
-        [leftButton setFrame:CGRectMake(0, 0, self.frame.size.height*1.5, self.frame.size.height)];
+        [leftButton setFrame:CGRectMake(0, CDStatusBarHeight, 60, 44)];
         [self addSubview:leftButton];
     }
 }

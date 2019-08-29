@@ -12,9 +12,9 @@
 //umeng
 #define umengKey @"58fd9b2145297d05930003e9"
 #define jPushAppKey  @"88462c246e4333ac6d36938e"
-#define NOTIFICATIONURL @"http://xinxinsun.cn/godtomb_app/updateapp.html"
-#define ABOUTSELF @"http://xinxinsun.cn/godtomb_app/aboutourself.html"
-#define APP_ITUNES_URL @""
+#define NOTIFICATIONURL @"http://www.baidu.com"
+#define ABOUTSELF @"http://www.baidu.com"
+#define APP_ITUNES_URL @"https://itunes.apple.com/cn/app/id1233226227"
 
 //3D touch
 #define delegateWindow [UIApplication sharedApplication].delegate.window
@@ -79,7 +79,7 @@ alpha:1.0]
 #define CDHomeTitle @"辰东作品集"
 #define CDHomeRightTitle @"书库"
 #define CDHomeLeftTitle @"辰东简介"
-#define stackRoomUrl @"http://xinxinsun.cn/godtomb_app/index.html"
+#define stackRoomUrl @"http://www.baidu.com"
 
 #define CDBookNameWithBSBM @"不死不灭"
 #define CDBookNameWithSM @"神墓"
@@ -89,8 +89,13 @@ alpha:1.0]
 #define CDBookNameWithSS @"圣墟"
 
 //screen
+#define CDStatusBarHeight   [UIApplication sharedApplication].statusBarFrame.size.height
+#define CDNavigationBarHeight (44 + CDStatusBarHeight)
 #define CDScreenWidth           [UIScreen mainScreen].bounds.size.width
 #define CDScreenHeight          [UIScreen mainScreen].bounds.size.height
+#define CDHasBang ((CDScreenWidth == 375 && CDScreenHeight == 812) || (CDScreenWidth == 414 && CDScreenHeight == 896))
+#define CDScreenHeight_All (CDScreenHeight + (CDHasBang ? 34 : 0))
+#define CDScreenHeight_Valid    (CDScreenHeight - (CDHasBang ? 34 : 0))
 
 //计算高度
 #define CalculateHeight_LabelFontSize @"fontSize"

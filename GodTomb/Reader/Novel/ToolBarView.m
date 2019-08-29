@@ -35,7 +35,7 @@ static const NSInteger ICON_SIZE = 30;//px
 -(void) layoutInit:(CGSize) size{
 //    int space_x                     = (size.width - ICON_SIZE * 4) / 5;
     CGFloat width = CDScreenWidth/4;
-    int space_y                     = (size.height - ICON_SIZE - 12) / 2;
+    int space_y                     = (48 - ICON_SIZE - 12) / 2;
 
     _catalog                        = [[UIButton alloc] initWithFrame:CGRectMake(0, space_y, width, ICON_SIZE)];
     [_catalog setImage:[UIImage imageNamed:@"icon_item_directory"] forState:UIControlStateNormal];

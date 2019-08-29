@@ -69,7 +69,7 @@
     CGContextSetTextMatrix(ctx, CGAffineTransformIdentity);
     CGContextTranslateCTM(ctx,0, self.bounds.size.height);
     CGContextScaleCTM(ctx, 1.0, -1.0);
-    CTFrameRef frame = [[TypeSetter shareInstance] makeFrame:_page.string bound:CGRectMake(0, -20, CDScreenWidth, CDScreenHeight) startNewLine:_page.startWithNewLine];
+    CTFrameRef frame = [[TypeSetter shareInstance] makeFrame:_page.string bound:CGRectMake(0, -CDStatusBarHeight, CDScreenWidth, CDScreenHeight) startNewLine:_page.startWithNewLine];
     CTFrameDraw(frame, ctx);
     CFRelease(frame);
 }
